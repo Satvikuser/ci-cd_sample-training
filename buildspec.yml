@@ -4,14 +4,10 @@ phases:
   install:
     commands:
       - echo installing NGINX
-      - sudo apt-get update
-      - sudo apt-get install nginx -y
 
   build:
     commands:
       - echo Build started on `date`
-      - sudo mkdir -p /var/www/html # Ensure the target directory exists
-      - sudo cp index.html /var/www/html/ # Copy index.html to /var/www/html
 
   post_build:
     commands:
