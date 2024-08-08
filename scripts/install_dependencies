@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo apt-get install ngnix -y
+
+echo "helo"
+#sudo service nginx restart
