@@ -10,16 +10,14 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-   #   - sudo mkdir -p /var/www/html # Ensure the target directory exists
+      - sudo mkdir -p /var/www/html # Ensure the target directory exists
       - sudo cp index.html /var/www/html/ # Copy index.html to /var/www/html
 
   post_build:
     commands:
       - echo Configuring NGINX
-     # - sudo cp -r /var/www/html/ /dist/ # Copy the /var/www/html contents to dist for artifacts
 
 artifacts:
   files:
-    - /var/www/html/index.html
-   # - dist/**/* # Specify the path to the artifacts
-  #discard-paths: no # Preserve the directory structure in the artifact
+    - index.html
+
