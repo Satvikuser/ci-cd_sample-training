@@ -7,16 +7,13 @@ files:
 
 permissions:
 - object: /var/www/html/
-  pattern: "*.sh"
   owner: root
   mode: 777
-  type:
-  - file
 
 
 hooks:
   Afterinstall:
-  - location: script.sh
+  - location: scripts/script.sh
     timeout: 300
     runas: root
   #ApplicationStart:
