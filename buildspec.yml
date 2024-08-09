@@ -10,15 +10,15 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - index.html /var/www/html/
+      - index.html /var/www/html/index.html
       
   post_build:
     commands:
       - echo Configuring NGINX
 
 artifacts:
+   # files:
+  #   - 'dist/**/*'
     files:
-     - 'dist/**/*'
-  #  files:
-   # - /var/www/html/index.html
+    - /var/www/html/index.html
 
