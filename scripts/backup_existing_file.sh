@@ -1,5 +1,6 @@
 #!/bin/bash
-
+sudo apt-get update
+sudo apt-get install -y nginx 
 # Check if the file exists
 #if [ -f /var/www/html/index.html ]; then
   # Backup the existing file
