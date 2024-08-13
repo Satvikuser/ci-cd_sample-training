@@ -19,5 +19,8 @@ phases:
 
 artifacts:
   files:
-    - /var/www/html/**/*
+    - "**/*"
+  base-directory: "./"
+  
+  #  - /var/www/html/**/*
     #- 'dist/**/*'
