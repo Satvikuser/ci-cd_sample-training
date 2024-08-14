@@ -7,7 +7,7 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: scripts/backup_existing_file.sh
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
 
